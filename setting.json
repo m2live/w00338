@@ -11,16 +11,20 @@
                 "protocol": "HTTPS",
                 "address": [
                     "demo.winesoft.co.kr"
-                ]
+                ],
+                "byClient": {
+                    "keyword": "external",
+                    "enable": true
+                }
             },
             "functions": {
                 "contents": {
                     "dims": {
                         "meta": {
+                            "enable": true,
                             "maxSourceSize": 19,
-                            "minSourceSize": 0,
                             "keyword": "dims",
-                            "enable": true
+                            "minSourceSize": 0
                         }
                     }
                 }
