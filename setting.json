@@ -15,25 +15,25 @@
             },
             "name": "158.247.222.237",
             "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "enable": true,
+                            "keyword": "dims",
+                            "maxSourceSize": 10,
+                            "minSourceSize": 0
+                        }
+                    }
+                },
                 "network": {
                     "http": {
                         "backEnd": {
                             "headers": {
                                 "host": {
-                                    "value": "demo.winesoft.co.kr.origin.m2",
-                                    "enable": true
+                                    "enable": true,
+                                    "value": "demo.winesoft.co.kr.origin.m2"
                                 }
                             }
-                        }
-                    }
-                },
-                "contents": {
-                    "dims": {
-                        "meta": {
-                            "keyword": "dims",
-                            "minSourceSize": 0,
-                            "maxSourceSize": 10,
-                            "enable": true
                         }
                     }
                 }
@@ -48,21 +48,21 @@
                     "127.0.0.1"
                 ]
             },
+            "name": "demo.winesoft.co.kr.origin.m2",
             "functions": {
                 "network": {
                     "http": {
                         "backEnd": {
                             "headers": {
                                 "host": {
-                                    "enable": true,
-                                    "value": "demo.winesoft.co.kr.first.origin.m2"
+                                    "value": "demo.winesoft.co.kr.first.origin.m2",
+                                    "enable": true
                                 }
                             }
                         }
                     }
                 }
             },
-            "name": "demo.winesoft.co.kr.origin.m2",
             "enable": true
         },
         {
@@ -73,28 +73,29 @@
                     "demo.winesoft.co.kr"
                 ]
             },
+            "name": "demo.winesoft.co.kr.first.origin.m2",
+            "fallback": {
+                "enable": true,
+                "next": "demo.winesoft.co.kr.second.origin.m2",
+                "matchingList": [
+                    "4xx",
+                    "5xx"
+                ]
+            },
             "functions": {
                 "network": {
                     "http": {
                         "backEnd": {
                             "headers": {
                                 "host": {
-                                    "value": "demo.winesoft.co.kr",
-                                    "enable": true
+                                    "enable": true,
+                                    "value": "demo.winesoft.co.kr"
                                 }
                             }
                         }
                     }
                 }
             },
-            "fallback": {
-                "matchingList": [
-                    "4xx"
-                ],
-                "next": "demo.winesoft.co.kr.second.origin.m2",
-                "enable": true
-            },
-            "name": "demo.winesoft.co.kr.first.origin.m2",
             "enable": true
         },
         {
@@ -105,21 +106,21 @@
                     "m2.winesoft.co.kr"
                 ]
             },
+            "name": "demo.winesoft.co.kr.second.origin.m2",
             "functions": {
                 "network": {
                     "http": {
                         "backEnd": {
                             "headers": {
                                 "host": {
-                                    "enable": true,
-                                    "value": "*"
+                                    "value": "*",
+                                    "enable": true
                                 }
                             }
                         }
                     }
                 }
             },
-            "name": "demo.winesoft.co.kr.second.origin.m2",
             "enable": true
         }
     ],
