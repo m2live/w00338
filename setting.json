@@ -4,7 +4,31 @@
         "hostName": "example",
         "admin": "admin@example.com"
     },
-    "hosting": [],
+    "hosting": [
+        {
+            "listen": "*:80",
+            "origin": {
+                "protocol": "http",
+                "address": [
+                    "demo.winesoft.co.kr"
+                ]
+            },
+            "name": "158.247.222.237",
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "keyword": "dims",
+                            "maxSourceSize": 10,
+                            "minSourceSize": 0,
+                            "enable": true
+                        }
+                    }
+                }
+            },
+            "enable": true
+        }
+    ],
     "env": {
         "log": {
             "info": {
