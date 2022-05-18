@@ -8,24 +8,30 @@
         {
             "listen": "*:80",
             "origin": {
-                "protocol": "http",
                 "address": [
                     "demo.winesoft.co.kr"
-                ]
+                ],
+                "protocol": "http"
             },
-            "name": "158.247.222.237",
+            "urlRewrites": [
+                {
+                    "replace": "/demorc/img/img1.jpg",
+                    "pattern": "/demo/assets/image/winesoft.png"
+                }
+            ],
             "functions": {
                 "contents": {
                     "dims": {
                         "meta": {
-                            "keyword": "dims",
                             "maxSourceSize": 10,
+                            "keyword": "dims",
                             "minSourceSize": 0,
                             "enable": true
                         }
                     }
                 }
             },
+            "name": "158.247.222.237",
             "enable": true
         }
     ],
