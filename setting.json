@@ -7,29 +7,29 @@
     "hosting": [
         {
             "listen": "*:80",
-            "name": "foo.com",
             "origin": {
+                "protocol": "http",
                 "address": [
                     "demo.winesoft.co.kr"
-                ],
-                "protocol": "http"
+                ]
             },
+            "name": "foo.com",
             "functions": {
                 "contents": {
                     "dims": {
                         "composite": [
                             {
-                                "dissolve": 37,
-                                "name": "Mark",
-                                "gravity": "n",
+                                "dissolve": 46,
+                                "name": "Mark2",
+                                "gravity": "nw",
                                 "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-0f5fd94a-e35b-4d4c-b1cf-2bdc67baccc7?generation=1653886614736386&alt=media"
                             }
                         ],
                         "meta": {
-                            "keyword": "dims",
-                            "maxSourceSize": 6,
                             "minSourceSize": 0,
-                            "enable": true
+                            "keyword": "dims",
+                            "enable": true,
+                            "maxSourceSize": 9
                         }
                     }
                 }
