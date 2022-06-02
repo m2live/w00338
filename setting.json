@@ -7,6 +7,33 @@
     "hosting": [
         {
             "listen": "*:80",
+            "name": "foo.com",
+            "origin": {
+                "protocol": "http",
+                "address": [
+                    "demo.winesoft.co.kr"
+                ]
+            },
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "keyword": "dims",
+                            "maxSourceSize": 15,
+                            "minSourceSize": 0,
+                            "enable": true
+                        },
+                        "composite": [
+                            {
+                                "dissolve": 46,
+                                "gravity": "se",
+                                "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-c1d55d93-d54d-470c-8276-86a7f626885c?generation=1654132733157423&alt=media",
+                                "name": "logo"
+                            }
+                        ]
+                    }
+                }
+            },
             "https": [
                 {
                     "ca": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-5ec434ac-d4a3-4ed5-9200-8b64b9bc5dd6?generation=1654133774555382&alt=media",
@@ -14,33 +41,6 @@
                     "cert": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-d5cfa45b-cc87-46f7-8ee8-9aad633c98f9?generation=1654133761073251&alt=media"
                 }
             ],
-            "name": "foo.com",
-            "origin": {
-                "address": [
-                    "demo.winesoft.co.kr"
-                ],
-                "protocol": "http"
-            },
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "meta": {
-                            "minSourceSize": 0,
-                            "enable": true,
-                            "keyword": "dims",
-                            "maxSourceSize": 13
-                        },
-                        "composite": [
-                            {
-                                "dissolve": 46,
-                                "name": "logo",
-                                "gravity": "se",
-                                "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-c1d55d93-d54d-470c-8276-86a7f626885c?generation=1654132733157423&alt=media"
-                            }
-                        ]
-                    }
-                }
-            },
             "enable": true
         }
     ],
