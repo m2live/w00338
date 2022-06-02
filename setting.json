@@ -7,6 +7,26 @@
     "hosting": [
         {
             "listen": "*:80",
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "keyword": "dims",
+                            "enable": true,
+                            "maxSourceSize": 9,
+                            "minSourceSize": 0
+                        },
+                        "composite": [
+                            {
+                                "gravity": "se",
+                                "dissolve": 46,
+                                "name": "M2_LOGO_5",
+                                "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-c1d55d93-d54d-470c-8276-86a7f626885c?generation=1654132733157423&alt=media"
+                            }
+                        ]
+                    }
+                }
+            },
             "origin": {
                 "protocol": "http",
                 "address": [
@@ -14,26 +34,6 @@
                 ]
             },
             "name": "foo.com",
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "composite": [
-                            {
-                                "dissolve": 46,
-                                "name": "Mark2",
-                                "gravity": "nw",
-                                "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-0f5fd94a-e35b-4d4c-b1cf-2bdc67baccc7?generation=1653886614736386&alt=media"
-                            }
-                        ],
-                        "meta": {
-                            "minSourceSize": 0,
-                            "keyword": "dims",
-                            "enable": true,
-                            "maxSourceSize": 9
-                        }
-                    }
-                }
-            },
             "enable": true
         }
     ],
