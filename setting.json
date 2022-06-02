@@ -7,6 +7,19 @@
     "hosting": [
         {
             "listen": "*:80",
+            "name": "foo.com",
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "keyword": "dims",
+                            "enable": true,
+                            "maxSourceSize": 17,
+                            "minSourceSize": 0
+                        }
+                    }
+                }
+            },
             "origin": {
                 "protocol": "http",
                 "address": [
@@ -15,24 +28,11 @@
             },
             "https": [
                 {
-                    "ca": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-a5272c6b-ab45-4ee6-86c0-f744f4fabb36?generation=1654147368362575&alt=media",
-                    "key": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-d915258d-056d-4fb5-89d8-117414352b92?generation=1654147363828078&alt=media",
-                    "cert": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-b46f2f41-8315-4c9b-8b8f-41d4791bfbff?generation=1654147359516312&alt=media"
+                    "ca": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-577cc308-6b06-4fb3-90ec-de5b98487673?generation=1654145134336995&alt=media",
+                    "key": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-54fca58f-58e6-473b-8572-ed081cd93a92?generation=1654145129510427&alt=media",
+                    "cert": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-2b467866-70e2-420d-a4a4-b8e93effc74a?generation=1654145123814793&alt=media"
                 }
             ],
-            "name": "foo.com",
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "meta": {
-                            "maxSourceSize": 9,
-                            "keyword": "dims",
-                            "minSourceSize": 0,
-                            "enable": true
-                        }
-                    }
-                }
-            },
             "enable": true
         }
     ],
