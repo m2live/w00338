@@ -7,6 +7,13 @@
     "hosting": [
         {
             "listen": "*:80",
+            "https": [
+                {
+                    "ca": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-5ec434ac-d4a3-4ed5-9200-8b64b9bc5dd6?generation=1654133774555382&alt=media",
+                    "key": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-b98d2c0e-1e66-47f7-8c00-a85d6dae99c2?generation=1654133769339525&alt=media",
+                    "cert": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-d5cfa45b-cc87-46f7-8ee8-9aad633c98f9?generation=1654133761073251&alt=media"
+                }
+            ],
             "name": "foo.com",
             "origin": {
                 "address": [
@@ -14,26 +21,19 @@
                 ],
                 "protocol": "http"
             },
-            "https": [
-                {
-                    "key": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-b98d2c0e-1e66-47f7-8c00-a85d6dae99c2?generation=1654133769339525&alt=media",
-                    "ca": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-5ec434ac-d4a3-4ed5-9200-8b64b9bc5dd6?generation=1654133774555382&alt=media",
-                    "cert": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-d5cfa45b-cc87-46f7-8ee8-9aad633c98f9?generation=1654133761073251&alt=media"
-                }
-            ],
             "functions": {
                 "contents": {
                     "dims": {
                         "meta": {
                             "minSourceSize": 0,
+                            "enable": true,
                             "keyword": "dims",
-                            "maxSourceSize": 9,
-                            "enable": true
+                            "maxSourceSize": 13
                         },
                         "composite": [
                             {
-                                "name": "logo",
                                 "dissolve": 46,
+                                "name": "logo",
                                 "gravity": "se",
                                 "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-c1d55d93-d54d-470c-8276-86a7f626885c?generation=1654132733157423&alt=media"
                             }
