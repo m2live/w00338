@@ -7,27 +7,34 @@
     "hosting": [
         {
             "listen": "*:80",
-            "name": "foo.com",
+            "https": [
+                {
+                    "cert": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-2b467866-70e2-420d-a4a4-b8e93effc74a?generation=1654145123814793&alt=media",
+                    "key": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-54fca58f-58e6-473b-8572-ed081cd93a92?generation=1654145129510427&alt=media",
+                    "ca": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-577cc308-6b06-4fb3-90ec-de5b98487673?generation=1654145134336995&alt=media"
+                }
+            ],
             "functions": {
                 "contents": {
                     "dims": {
                         "meta": {
-                            "maxSourceSize": 2,
                             "minSourceSize": 0,
+                            "maxSourceSize": 2,
                             "enable": true,
                             "keyword": "dims"
                         },
                         "composite": [
                             {
+                                "name": "logo",
                                 "dissolve": 50,
                                 "gravity": "c",
-                                "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-cbb81ced-bcb6-443c-b043-1065e1f68c22?generation=1654137850633700&alt=media",
-                                "name": "logo"
+                                "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-cbb81ced-bcb6-443c-b043-1065e1f68c22?generation=1654137850633700&alt=media"
                             }
                         ]
                     }
                 }
             },
+            "name": "foo.com",
             "origin": {
                 "protocol": "http",
                 "address": [
