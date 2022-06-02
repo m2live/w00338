@@ -7,19 +7,27 @@
     "hosting": [
         {
             "listen": "*:80",
+            "name": "foo.com",
             "functions": {
                 "contents": {
                     "dims": {
                         "meta": {
-                            "minSourceSize": 0,
                             "maxSourceSize": 2,
-                            "keyword": "dims",
-                            "enable": true
-                        }
+                            "minSourceSize": 0,
+                            "enable": true,
+                            "keyword": "dims"
+                        },
+                        "composite": [
+                            {
+                                "dissolve": 50,
+                                "gravity": "c",
+                                "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-cbb81ced-bcb6-443c-b043-1065e1f68c22?generation=1654137850633700&alt=media",
+                                "name": "logo"
+                            }
+                        ]
                     }
                 }
             },
-            "name": "foo.com",
             "origin": {
                 "protocol": "http",
                 "address": [
