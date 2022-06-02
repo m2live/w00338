@@ -7,32 +7,32 @@
     "hosting": [
         {
             "listen": "*:80",
+            "origin": {
+                "protocol": "http",
+                "address": [
+                    "demo.winesoft.co.kr"
+                ]
+            },
+            "https": [
+                {
+                    "ca": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-a5272c6b-ab45-4ee6-86c0-f744f4fabb36?generation=1654147368362575&alt=media",
+                    "key": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-d915258d-056d-4fb5-89d8-117414352b92?generation=1654147363828078&alt=media",
+                    "cert": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-b46f2f41-8315-4c9b-8b8f-41d4791bfbff?generation=1654147359516312&alt=media"
+                }
+            ],
+            "name": "foo.com",
             "functions": {
                 "contents": {
                     "dims": {
                         "meta": {
-                            "enable": true,
-                            "maxSourceSize": 5,
+                            "maxSourceSize": 9,
+                            "keyword": "dims",
                             "minSourceSize": 0,
-                            "keyword": "dims"
+                            "enable": true
                         }
                     }
                 }
             },
-            "name": "foo.com",
-            "origin": {
-                "address": [
-                    "demo.winesoft.co.kr"
-                ],
-                "protocol": "http"
-            },
-            "https": [
-                {
-                    "cert": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-b46f2f41-8315-4c9b-8b8f-41d4791bfbff?generation=1654147359516312&alt=media",
-                    "ca": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-a5272c6b-ab45-4ee6-86c0-f744f4fabb36?generation=1654147368362575&alt=media",
-                    "key": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-d915258d-056d-4fb5-89d8-117414352b92?generation=1654147363828078&alt=media"
-                }
-            ],
             "enable": true
         }
     ],
