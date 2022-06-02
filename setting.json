@@ -7,33 +7,33 @@
     "hosting": [
         {
             "listen": "*:80",
+            "name": "foo.com",
             "functions": {
                 "contents": {
                     "dims": {
                         "meta": {
-                            "keyword": "dims",
                             "enable": true,
+                            "keyword": "dims",
                             "maxSourceSize": 9,
                             "minSourceSize": 0
                         },
                         "composite": [
                             {
+                                "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-c1d55d93-d54d-470c-8276-86a7f626885c?generation=1654132733157423&alt=media",
                                 "gravity": "se",
-                                "dissolve": 46,
-                                "name": "M2_LOGO_5",
-                                "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-c1d55d93-d54d-470c-8276-86a7f626885c?generation=1654132733157423&alt=media"
+                                "name": "logo",
+                                "dissolve": 46
                             }
                         ]
                     }
                 }
             },
             "origin": {
-                "protocol": "http",
                 "address": [
                     "demo.winesoft.co.kr"
-                ]
+                ],
+                "protocol": "http"
             },
-            "name": "foo.com",
             "enable": true
         }
     ],
