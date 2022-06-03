@@ -13,27 +13,27 @@
                 ],
                 "protocol": "http"
             },
+            "name": "foo.com",
             "functions": {
                 "contents": {
                     "dims": {
+                        "meta": {
+                            "maxSourceSize": 10,
+                            "enable": true,
+                            "keyword": "dims",
+                            "minSourceSize": 0
+                        },
                         "composite": [
                             {
-                                "gravity": "c",
+                                "name": "logo",
                                 "path": "m2-logo-5.png",
                                 "dissolve": 50,
-                                "name": "logo"
+                                "gravity": "c"
                             }
-                        ],
-                        "meta": {
-                            "keyword": "dims",
-                            "minSourceSize": 0,
-                            "enable": true,
-                            "maxSourceSize": 11
-                        }
+                        ]
                     }
                 }
             },
-            "name": "foo.com",
             "enable": true
         }
     ],
