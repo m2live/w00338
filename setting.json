@@ -8,27 +8,27 @@
         {
             "listen": "*:80",
             "origin": {
-                "protocol": "http",
                 "address": [
                     "demo.winesoft.co.kr"
-                ]
+                ],
+                "protocol": "http"
             },
             "functions": {
                 "contents": {
                     "dims": {
                         "composite": [
                             {
-                                "path": "m2-logo-5.png",
-                                "name": "logo",
                                 "gravity": "c",
-                                "dissolve": 50
+                                "path": "m2-logo-5.png",
+                                "dissolve": 50,
+                                "name": "logo"
                             }
                         ],
                         "meta": {
-                            "maxSourceSize": 13,
-                            "minSourceSize": 0,
                             "keyword": "dims",
-                            "enable": true
+                            "minSourceSize": 0,
+                            "enable": true,
+                            "maxSourceSize": 11
                         }
                     }
                 }
