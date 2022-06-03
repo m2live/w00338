@@ -7,33 +7,40 @@
     "hosting": [
         {
             "listen": "*:80",
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "composite": [
-                            {
-                                "name": "logo",
-                                "gravity": "c",
-                                "dissolve": 50,
-                                "path": "m2-logo-5.png"
-                            }
-                        ],
-                        "meta": {
-                            "maxSourceSize": 15,
-                            "enable": true,
-                            "keyword": "dims",
-                            "minSourceSize": 0
-                        }
-                    }
-                }
-            },
+            "name": "foo.com",
             "origin": {
                 "address": [
                     "demo.winesoft.co.kr"
                 ],
                 "protocol": "http"
             },
-            "name": "foo.com",
+            "https": [
+                {
+                    "ca": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-a5272c6b-ab45-4ee6-86c0-f744f4fabb36?generation=1654147368362575&alt=media",
+                    "cert": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-b46f2f41-8315-4c9b-8b8f-41d4791bfbff?generation=1654147359516312&alt=media",
+                    "key": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-d7ab04a1-700e-45ad-8bd7-ee02d40603b4?generation=1654230739924020&alt=media"
+                }
+            ],
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "composite": [
+                            {
+                                "dissolve": 50,
+                                "path": "m2-logo-5.png",
+                                "name": "logo",
+                                "gravity": "c"
+                            }
+                        ],
+                        "meta": {
+                            "maxSourceSize": 15,
+                            "enable": true,
+                            "minSourceSize": 0,
+                            "keyword": "dims"
+                        }
+                    }
+                }
+            },
             "enable": true
         }
     ],
