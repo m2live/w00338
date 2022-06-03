@@ -7,32 +7,32 @@
     "hosting": [
         {
             "listen": "*:80",
-            "name": "foo.com",
-            "origin": {
-                "protocol": "http",
-                "address": [
-                    "demo.winesoft.co.kr"
-                ]
-            },
             "functions": {
                 "contents": {
                     "dims": {
                         "meta": {
-                            "keyword": "dims",
                             "enable": true,
-                            "maxSourceSize": 11,
+                            "maxSourceSize": 13,
+                            "keyword": "dims",
                             "minSourceSize": 0
                         },
                         "composite": [
                             {
-                                "dissolve": 50,
                                 "gravity": "c",
+                                "dissolve": 50,
                                 "name": "logo",
                                 "path": "m2-logo-5.png"
                             }
                         ]
                     }
                 }
+            },
+            "name": "foo.com",
+            "origin": {
+                "address": [
+                    "demo.winesoft.co.kr"
+                ],
+                "protocol": "http"
             },
             "enable": true
         }
