@@ -1,6 +1,6 @@
 {
     "meta": {
-        "version": "2",
+        "version": "3",
         "hostName": "example",
         "admin": "admin@example.com"
     },
@@ -95,6 +95,9 @@
                     "threshold": 5000,
                     "killTimeout": 3000
                 }
+            },
+            "live": {
+                "enable": true
             }
         },
         "puppeteer": {
