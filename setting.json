@@ -4,41 +4,6 @@
         "hostName": "example",
         "admin": "admin@example.com"
     },
-    "hosting": [
-        {
-            "listen": "*:80",
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "meta": {
-                            "keyword": "dims",
-                            "maxSourceSize": 2,
-                            "minSourceSize": 0,
-                            "enable": true
-                        },
-                        "composite": [
-                            {
-                                "dissolve": 50,
-                                "path": "winesoft.png",
-                                "gravity": "c",
-                                "name": "logo",
-                                "id": 1,
-                                "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-21bf60d8-8cd9-4359-884c-bf17c68f134d?generation=1657681491214777&alt=media"
-                            }
-                        ]
-                    }
-                }
-            },
-            "origin": {
-                "protocol": "http",
-                "address": [
-                    "demo.winesoft.co.kr"
-                ]
-            },
-            "name": "image.winesoft.com",
-            "enable": true
-        }
-    ],
     "env": {
         "log": {
             "info": {
