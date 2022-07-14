@@ -108,6 +108,43 @@
         "management": {
             "api": {
                 "port": 10040
+            },
+            "server": {
+                "enable": true,
+                "connection": [
+                    {
+                        "name": "myFirebase",
+                        "type": "firebasePubsub",
+                        "info": {
+                            "apiKey": "AIzaSyDDLFgv6PQnLyvdknDiGTB4JVGws5jZeTA",
+                            "authDomain": "stg-m2live-api.firebaseapp.com ",
+                            "databaseUrl": "https://stg-m2live-api.firebaseio.com",
+                            "projectId": "stg-m2live-api",
+                            "storageBucket": "stg-m2live-api.appspot.com",
+                            "messagingSenderId": "370817246668",
+                            "appId": "1:370817246668:web:d8546f78b2330d6a396969"
+                        }
+                    }
+                ],
+                "features": {
+                    "setting": {
+                        "enable": true,
+                        "feed": {
+                            "type": "firestore",
+                            "info": {
+                                "connect": "myFirebase",
+                                "doc": "m2nodes/#m2live.nodeId/events"
+                            }
+                        },
+                        "feedback": {
+                            "type": "firestore",
+                            "info": {
+                                "connect": "myFirebase",
+                                "doc": "m2nodes/#m2live.nodeId/feedbacks"
+                            }
+                        }
+                    }
+                }
             }
         },
         "properties": {
