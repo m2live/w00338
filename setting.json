@@ -764,5 +764,40 @@
                 }
             }
         }
-    }
+    },
+    "hosting": [
+        {
+            "listen": "*:80",
+            "name": "image.winesoft.com",
+            "origin": {
+                "address": [
+                    "demo.winesoft.co.kr"
+                ],
+                "protocol": "http"
+            },
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "keyword": "dims",
+                            "maxSourceSize": 5,
+                            "minSourceSize": 0,
+                            "enable": true
+                        },
+                        "composite": [
+                            {
+                                "id": 1,
+                                "gravity": "c",
+                                "dissolve": 50,
+                                "name": "logo",
+                                "path": "winesoft.png",
+                                "file": "https://storage.googleapis.com/download/storage/v1/b/stg-m2live-api.appspot.com/o/services%2Fstg-21bf60d8-8cd9-4359-884c-bf17c68f134d?generation=1657681491214777&alt=media"
+                            }
+                        ]
+                    }
+                }
+            },
+            "enable": true
+        }
+    ]
 }
