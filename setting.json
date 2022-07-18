@@ -108,6 +108,23 @@
                                 "doc": "m2nodes/#m2live.nodeId/feedbacks"
                             }
                         }
+                    },
+                    "heartbeat": {
+                        "enable": true,
+                        "feedback": {
+                            "type": "firestore",
+                            "info": {
+                                "connect": "myFirebase",
+                                "doc": "m2nodes/#m2live.nodeId/heartbeats",
+                                "schedule": "*/15 * * * * *",
+                                "metrics": {
+                                    "system": true,
+                                    "rt": true,
+                                    "hosting": true,
+                                    "node": true
+                                }
+                            }
+                        }
                     }
                 }
             }
